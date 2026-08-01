@@ -1,0 +1,31 @@
+# To prevent access to .env and other files
+<Files .*>
+# Apache 2.2
+<IfModule !mod_authz_core.c>
+Order deny,allow
+Deny from all
+</IfModule>
+# Apache 2.4
+<IfModule mod_authz_core.c>
+Require all denied
+</IfModule>
+</Files>
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Redirect root to the public folder without displaying "/public" in the URL
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Ensure all other requests are routed to the public folder
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Ensure Laravel's public/index.php handles the requests
+RewriteCond %{REQUEST_URI} ^/public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Prevent direct access to the public folder (optional for added security)
+RewriteCond %{REQUEST_URI} ^/public/
+RewriteRule ^(.*)$ - [F,L]

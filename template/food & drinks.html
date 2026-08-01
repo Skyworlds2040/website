@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#fbf9f8",
+                      "secondary-container": "#92f3ec",
+                      "on-tertiary-container": "#f8fcff",
+                      "surface-variant": "#e3e2e2",
+                      "on-secondary-fixed": "#00201e",
+                      "tertiary-container": "#537989",
+                      "on-surface-variant": "#5d3f40",
+                      "outline": "#916e6f",
+                      "surface-container-low": "#f5f3f3",
+                      "on-primary-fixed-variant": "#920027",
+                      "on-error-container": "#93000a",
+                      "secondary": "#006a65",
+                      "on-secondary-container": "#00716c",
+                      "on-background": "#1b1c1c",
+                      "background": "#fbf9f8",
+                      "inverse-primary": "#ffb3b5",
+                      "surface-dim": "#dbdad9",
+                      "primary-container": "#e41445",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#fbf9f8",
+                      "on-primary-container": "#fffbfa",
+                      "secondary-fixed-dim": "#75d6d0",
+                      "on-surface": "#1b1c1c",
+                      "surface-tint": "#be0035",
+                      "on-primary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#92f3ec",
+                      "primary-fixed-dim": "#ffb3b5",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#a5ccde",
+                      "primary": "#b90034",
+                      "tertiary": "#3a6070",
+                      "primary-fixed": "#ffdada",
+                      "on-tertiary-fixed": "#001f29",
+                      "on-tertiary-fixed-variant": "#254c5b",
+                      "surface-container-high": "#e9e8e7",
+                      "outline-variant": "#e6bdbd",
+                      "on-secondary-fixed-variant": "#00504c",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#303030",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#e3e2e2",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f0f0",
+                      "on-primary-fixed": "#40000c",
+                      "surface-container": "#efeded",
+                      "tertiary-fixed": "#c1e8fb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-text-mask {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface-container-low/70 backdrop-blur-xl border-b border-outline-variant/15 flex justify-between items-center px-6 py-4 w-full">
+<div class="text-2xl font-black italic tracking-tighter text-[#b90034] dark:text-[#e41445] font-headline">Neon Edict</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-headline font-bold hover:opacity-80 transition-opacity" href="#">Events</a>
+<a class="text-on-surface-variant font-headline font-bold hover:opacity-80 transition-opacity" href="#">Vibe</a>
+<a class="text-[#b90034] dark:text-[#e41445] font-headline font-bold" href="#">Menu</a>
+<a class="text-on-surface-variant font-headline font-bold hover:opacity-80 transition-opacity" href="#">Booking</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:opacity-80 cursor-pointer" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:opacity-80 cursor-pointer" data-icon="person">person</span>
+</div>
+</nav>
+<!-- Immersive Hero -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover" data-alt="vibrant Miami bar scene at night with neon lights reflecting on wet pavement and energetic crowd silhouettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1AOHwhQBixO1_Beyy4ICm6A2PNZ5GU6LuLLCMXnaNmqDbXNs648lOwyGxazkJIngWnMUNNOAC76a9emfix3opbdxRpqwuIUz6Zucnyqui2tBo0BMpNJXT7gg5v1uE9xyKYRs30sk9zW7Ad8YmfcQQOLzRdumq9k-ZqSq1_Xy33q1E1vzM4P2u0enCF4j1PfhnrWRmTO-ZXuPPFn9l16phLiFY34FXptMp3S24uDowC9LIymzHyWdheG6-LGbEa-BLmweOlpFTETk"/>
+<div class="relative z-20 text-center px-4">
+<h1 class="font-headline font-black text-6xl md:text-9xl text-white tracking-tighter leading-none">
+                EAT. <br/>
+                DRINK. <br/>
+<span class="text-primary-container">VIBE.</span>
+</h1>
+<p class="mt-6 font-label uppercase tracking-[0.3em] text-white/80 text-sm md:text-lg">The Pulse of South Beach Nightlife</p>
+</div>
+</header>
+<!-- Dining Concept (Editorial) -->
+<section class="py-24 px-6 md:px-24 bg-surface max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<span class="absolute -top-12 -left-8 text-surface-container-highest font-headline font-black text-[10rem] select-none z-0">FLAVOR</span>
+<div class="relative z-10">
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-8">
+                        The Flavor of <br/><span class="text-primary-container">South Beach</span>
+</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-md">
+                        We don't just serve food; we orchestrate sensory experiences. Our culinary philosophy blends tropical Latin influences with modern Miami sophistication. Every plate is a vibrant canvas of color and local freshness.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-gradient-to-br from-[#b90034] to-[#e41445] text-white font-label font-bold py-4 px-10 rounded-full shadow-[0px_20px_40px_rgba(185,0,52,0.15)] hover:scale-105 transition-transform">EXPLORE MENU</button>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden shadow-2xl">
+<img alt="" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="high-end culinary dish with vibrant red sauces and microgreens on a white ceramic plate against a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCGuwnufRb4f2zr2GmGFcfdQPYl5JL-fOYxSxfBDbWJfVcLny75R8aL86V41guiKiW0HjMY2K4oUBrUpyPPs06tRVdgj8C7gTpOzPR80a-uIFte23sMjRDfwkzqHvtTQULmkC-jRcG07yNA4GeT-VS61WQ6tGnh2yp-6jCUXqcD1P0MzlvAEs7SGP5hir5l5PSfY-_Gtjy5fwPYY0M0j7WdtUFqs8Z6lI_Fd344ifFW-6-otfxnwK7t-m7gfBXbCEykCSKkuIJE9A"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-1/2 aspect-square bg-surface-container-lowest p-2 shadow-xl hidden md:block">
+<img alt="" class="w-full h-full object-cover" data-alt="close-up of a fresh gourmet slider with melting cheese and artisanal bun on a wooden serving board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAogVJNJGpXV2EQr4MYEodzbyqSjmIOfjnU0P4tggecs3m18-FLLPXLIg8MP0pKKVMvJ70TWwB6Pv9qlTSZwjKpRc9Vzhl99QMNIVREWOJB7btqK83HNk2ZtFLOGuSiAoGe6BJktIRZtm_cZJlGv1i1FQlphWhcRMavTX99xMoo_xEiI-ZO8HWbMSef8EQok20YTJeYcAEe6ikh18DM2FIqrqzNl7yGfkip2nGdeXrdp1qXZk27JZt0CEwwFByPxRnDJ93a3QNDrTE"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Highlights (Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h3 class="font-headline text-4xl md:text-5xl font-black tracking-tighter">SIGNATURE BITES</h3>
+<div class="h-1 w-24 bg-primary-container mt-4"></div>
+</div>
+<p class="hidden md:block font-label text-xs uppercase tracking-widest text-on-surface-variant max-w-xs text-right">Carefully curated for the midnight cravings and the golden hour socials.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest group overflow-hidden">
+<div class="aspect-video overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="three artisanal mini beef sliders with caramelized onions and microgreens on a slate platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrXvMhmVTyfZngT5MM8kP8LOKzLVY23z3U38Nd5novfxp3mqyRlMWPq8_B4lY_mV6o_nql5Fetobd20HXOOfMnPD_RB3D0P7iDuQhEH0TZb_0OBZi9kMuZp-9FzG0VtJWS5U8SC_tDxLvy_76DsNlkT2V25RZHQRWdWQKdrxnHdgQpRI8rHK_n7Zj1TZxbJgst3st7_dEmbJImosYwhjtOLp8J-qrbWfAK-5-cs8C9IPvfoPS7_t-pESWOzCfJUwEIW_x4kBT69BQ"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl font-bold tracking-tight">Neon Sliders</h4>
+<span class="font-headline font-black text-primary">$18</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6">Wagyu beef, spicy aioli, pickled red onion, brioche bun.</p>
+<span class="bg-surface-container-highest text-on-surface-variant text-[10px] font-bold px-2 py-1 uppercase tracking-tighter rounded-sm">Chef's Choice</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest group overflow-hidden">
+<div class="aspect-video overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="fresh seafood ceviche with diced mango, red onions, and cilantro served in a glass bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArlXSOS-Oq8kCuq8RF3NtUdbaD6UN44zqbWiO_xP9PQDrNgjhRJHrOvXc3LpIiSF9mTd1cP53VkyR_8_Efd4qu8u5CZpt0Gi1kYsvfWHeWp__0RPSa1rPY5xErT5gZDVEesM6WM8XTzs79yaGM9hPE4P3klZva3801Klj946IxcRA7wrkCn2sudVVMWviYpVniXKDjpJMfmvmvzNo0ktf7v1XJpbWoUqa-ZihKbplYZt9Vtlw8FSBN13bRrVzKFJeR_o2G3vZ9064"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl font-bold tracking-tight">Signature Ceviche</h4>
+<span class="font-headline font-black text-primary">$22</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6">Local snapper, citrus marinade, mango salsa, crispy plantain.</p>
+<span class="bg-surface-container-highest text-on-surface-variant text-[10px] font-bold px-2 py-1 uppercase tracking-tighter rounded-sm">Fresh Catch</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest group overflow-hidden">
+<div class="aspect-video overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="vibrant pink cocktail with a watermelon slice and a chili-salted rim on a dark reflective surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAThSyt2WPqfLUnaMqj_Mb1tH5doQxtOhIqc2UAZF4PNDKI6ked2-LRrEBOij-nbN034zRuIStcPIgEHquCauMyg9OW9Vzi6wfaB6Y2J4dyw-QTpt5dd8HjX6kaQa9pWf5u_3o1-lI9bMtCryapPo5pqijKgHIfXptwrHma-T8awxdjchhw2GwUL0cqi0jSU58FtSABhEfsvn9pWbsd99ZB2kWntDiGhXewrlMhOtcUV3sHALJfg8IFKEaUb_wGsUkMyWn7xy-u6Xc"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-2xl font-bold tracking-tight">Watermelon Margarita</h4>
+<span class="font-headline font-black text-primary">$16</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6">Tequila Blanco, fresh watermelon, tajin rim, lime zest.</p>
+<span class="bg-primary-container text-white text-[10px] font-bold px-2 py-1 uppercase tracking-tighter rounded-sm">Hot</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Outdoor Dining / Poolside Vibe -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-stretch">
+<div class="flex-1 bg-surface-container-high relative overflow-hidden group">
+<img alt="" class="w-full h-full min-h-[400px] object-cover" data-alt="luxury poolside outdoor dining area at sunset with palm trees, lounge chairs, and soft ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuHVFlVKUa74IModsDwGq1coDL31HXADkK3w3Pvcji5Yw4hmTRgpY3Nar-Ep_PtCebwbfU5-TJ_tfSwN3n9ra13Aj0FpEpNGZekMUfUWtNTFaTi0TZvipQBbrQ8MeIgbfQ4olpIZxj_Np57mUkfpG2lmem8MEjSQmb7CidPpy-jXwgnVtmXAO-yIzwaVYQuWMGVYDYKG3L8MeEjnmZj7fuV5v6EJlAJ_rqiwCtA-VL-2USOvH8LbALKXuACTTaWKmmw2Qx8MyHChY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white font-headline text-4xl font-black italic">POOLSIDE</h3>
+</div>
+</div>
+<div class="flex-1 flex flex-col justify-center p-8 md:p-16 bg-surface-container-low border-r-8 border-primary-container">
+<h3 class="font-headline text-4xl font-bold mb-6 tracking-tight">AL FRESCO LUXE</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                    Elevate your afternoon with our poolside service. Sun-drenched bites and frozen elixirs served under the swaying palms of Ocean Drive.
+                </p>
+<a class="font-label font-bold text-primary flex items-center gap-2 group" href="#">
+                    VIEW POOL MENU 
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Beverage Program (Dark Theme) -->
+<section class="py-32 bg-inverse-surface text-white">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="font-headline text-5xl md:text-8xl font-black tracking-tighter mb-4 editorial-text-mask bg-gradient-to-r from-primary-container to-secondary">
+                THE AFTER HOURS
+            </h2>
+<p class="font-label uppercase tracking-[0.4em] text-white/50 mb-16">Premium Bottle Service &amp; Craft Mixology</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+<div class="p-12 bg-white/5 backdrop-blur-md rounded-lg border border-white/10 hover:border-primary-container/50 transition-colors">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6" data-icon="local_bar">local_bar</span>
+<h4 class="font-headline text-3xl font-bold mb-4">Cocktail Lab</h4>
+<p class="text-white/70 mb-8 leading-relaxed">Our mixologists treat every glass like an experiment in flavor. House-made infusions, rare botanicals, and liquid nitrogen finishes define our signature program.</p>
+<ul class="space-y-4 font-label text-sm uppercase tracking-widest text-white/90">
+<li class="flex justify-between border-b border-white/10 pb-2"><span>Midnight in Miami</span> <span>$18</span></li>
+<li class="flex justify-between border-b border-white/10 pb-2"><span>Neon Smoke Old Fashioned</span> <span>$20</span></li>
+<li class="flex justify-between border-b border-white/10 pb-2"><span>Electric Lychee Martini</span> <span>$17</span></li>
+</ul>
+</div>
+<div class="p-12 bg-white/5 backdrop-blur-md rounded-lg border border-white/10 hover:border-secondary/50 transition-colors">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-6" data-icon="wine_bar">wine_bar</span>
+<h4 class="font-headline text-3xl font-bold mb-4">VVIP Bottle Service</h4>
+<p class="text-white/70 mb-8 leading-relaxed">The ultimate status symbol. Reserved for those who appreciate the finer vintages and the highest shelf. Tableside presentation with sparklers and custom mixers.</p>
+<button class="border border-white/20 hover:bg-white hover:text-black transition-all px-8 py-3 font-label font-bold uppercase tracking-widest text-xs">RESERVE A TABLE</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Book Your Table CTA -->
+<section class="py-24 bg-surface text-center px-6 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent opacity-30"></div>
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">TASTE THE <span class="text-primary-container">ADRENALINE.</span></h2>
+<p class="text-on-surface-variant text-lg mb-12 italic">Join us for an unforgettable dining experience in the heart of the action.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-white font-label font-black text-sm px-12 py-5 rounded-full hover:shadow-[0px_0px_30px_rgba(185,0,52,0.3)] transition-all uppercase tracking-widest">Book Your Table</button>
+<button class="bg-surface-container-high text-on-surface font-label font-black text-sm px-12 py-5 rounded-full hover:bg-surface-container-highest transition-all uppercase tracking-widest">Private Events</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/10 flex flex-col items-center gap-6 w-full">
+<div class="font-black text-[#b90034] text-xl font-headline italic tracking-tighter">NEON EDICT</div>
+<div class="flex gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-xs tracking-tighter text-on-surface-variant hover:text-[#e41445] transition-colors" href="#">Privacy</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs tracking-tighter text-on-surface-variant hover:text-[#e41445] transition-colors" href="#">Terms</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs tracking-tighter text-on-surface-variant hover:text-[#e41445] transition-colors" href="#">Press</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs tracking-tighter text-on-surface-variant hover:text-[#e41445] transition-colors" href="#">Contact</a>
+</div>
+<div class="font-['Plus_Jakarta_Sans'] text-xs tracking-tighter text-on-surface-variant/60 uppercase">
+            © 2024 NEON EDICT. MIAMI AFTER DARK.
+        </div>
+</footer>
+<!-- Mobile Bottom Navigation -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-surface/70 backdrop-blur-xl flex justify-around items-center px-4 pb-6 pt-2 shadow-[0px_-10px_30px_rgba(185,0,52,0.1)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 scale-110 duration-300">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Events</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 scale-110 duration-300">
+<span class="material-symbols-outlined" data-icon="local_fire_department">local_fire_department</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Vibe</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-[#b90034] to-[#e41445] text-white rounded-xl p-2 min-w-[64px] scale-110 duration-300">
+<span class="material-symbols-outlined" data-icon="local_bar">local_bar</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 scale-110 duration-300">
+<span class="material-symbols-outlined" data-icon="event_seat">event_seat</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Booking</span>
+</div>
+</nav>
+</body></html>

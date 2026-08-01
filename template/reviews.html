@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#3a6070",
+                        "surface-tint": "#be0035",
+                        "surface-dim": "#dbdad9",
+                        "primary-container": "#e41445",
+                        "surface-container": "#efeded",
+                        "primary": "#b90034",
+                        "outline-variant": "#e6bdbd",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fbf9f8",
+                        "on-primary-container": "#fffbfa",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#a5ccde",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#303030",
+                        "on-secondary-fixed": "#00201e",
+                        "on-surface": "#1b1c1c",
+                        "on-background": "#1b1c1c",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#537989",
+                        "surface-container-low": "#f5f3f3",
+                        "on-primary-fixed-variant": "#920027",
+                        "on-tertiary-fixed": "#001f29",
+                        "primary-fixed-dim": "#ffb3b5",
+                        "secondary-fixed-dim": "#75d6d0",
+                        "surface": "#fbf9f8",
+                        "on-primary-fixed": "#40000c",
+                        "on-secondary-fixed-variant": "#00504c",
+                        "on-surface-variant": "#5d3f40",
+                        "secondary": "#006a65",
+                        "inverse-primary": "#ffb3b5",
+                        "primary-fixed": "#ffdada",
+                        "on-tertiary-fixed-variant": "#254c5b",
+                        "outline": "#916e6f",
+                        "secondary-fixed": "#92f3ec",
+                        "surface-bright": "#fbf9f8",
+                        "secondary-container": "#92f3ec",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e9e8e7",
+                        "tertiary-fixed": "#c1e8fb",
+                        "surface-variant": "#e3e2e2",
+                        "surface-container-highest": "#e3e2e2",
+                        "on-secondary-container": "#00716c",
+                        "on-tertiary-container": "#f8fcff",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            background-color: rgba(251, 249, 248, 0.7);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(27, 28, 28, 0) 0%, rgba(27, 28, 28, 0.8) 100%);
+        }
+        .text-bleed {
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-rose-500/10">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black italic tracking-tighter text-rose-700 dark:text-rose-500 font-headline">Neon Edict</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-zinc-600 dark:text-zinc-400 font-medium font-headline hover:text-rose-500 transition-colors duration-300" href="#">Hotels</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium font-headline hover:text-rose-500 transition-colors duration-300" href="#">Nightlife</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium font-headline hover:text-rose-500 transition-colors duration-300" href="#">The Edict</a>
+<a class="text-rose-700 dark:text-rose-400 font-black border-b-2 border-rose-600 font-headline" href="#">Reviews</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-on-surface" data-icon="person">person</button>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2 rounded-full font-headline font-bold text-sm tracking-wide transition-all transform active:scale-95 duration-150">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[921px] w-full overflow-hidden flex items-end bg-surface-dim">
+<img alt="Neon Edict Exterior" class="absolute inset-0 w-full h-full object-cover object-center" data-alt="ultra-modern luxury hotel exterior at night with vibrant neon pink lighting accents, palm trees reflecting on glass windows, cinematic deep contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA6YOcCyUoncqsO2tLH-03bIHX26kFc8XK3tPtQAccrxGhrH60jV1FRh9xYCD9AVUWZ2GAJpfPJrjIY3jnXzME3dd49KvB23uk13pHM3NrqlRG3VgOgzgsRiHr6rBTX3qPCVYtxaEQjM3NpD1y0W2TCcxcBRaWrTxonNoMx7QNxLmi98ZUw9xif0BMt8WB8-mUkyZgx2iVZsv9Hi3z4-KCjgEZYP96cYUDGY69Pn1r0Tx2Umcv47JaUlHaCh8qTZQpqWDevZKds18"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 w-full px-8 pb-20 max-w-screen-2xl mx-auto">
+<span class="inline-block bg-primary-container text-white px-3 py-1 mb-6 text-xs font-black tracking-[0.2em] uppercase rounded-sm">Unfiltered Reality</span>
+<h1 class="font-headline font-black text-7xl md:text-9xl text-white leading-none text-bleed uppercase -ml-1">
+                The Edict<br/>Experience
+            </h1>
+<p class="text-white/80 max-w-xl mt-8 text-lg font-medium leading-relaxed">
+                Step into the chaos where luxury meets electricity. See what the night-dwellers say about Miami's most uncompromising destination.
+            </p>
+</div>
+</section>
+<!-- Review Summary Section -->
+<section class="py-24 bg-surface px-8">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+<div class="md:col-span-1">
+<h2 class="font-headline font-extrabold text-4xl mb-4 text-on-surface">VOICES OF THE VIBE</h2>
+<div class="w-20 h-2 bg-primary mb-6"></div>
+<p class="text-on-surface-variant leading-relaxed">Our reputation is built on the pulse of the crowd. 12,000+ verified stays and counting.</p>
+</div>
+<div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Aggregate 1 -->
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="text-primary font-headline font-black text-5xl mb-2">4.9</span>
+<div class="flex text-primary mb-2">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline font-bold text-xs tracking-widest uppercase text-on-surface-variant">Google Reviews</span>
+</div>
+<!-- Aggregate 2 -->
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="text-secondary font-headline font-black text-5xl mb-2">5.0</span>
+<div class="flex text-secondary mb-2">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline font-bold text-xs tracking-widest uppercase text-on-surface-variant">TripAdvisor Platinum</span>
+</div>
+<!-- Aggregate 3 -->
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="text-on-surface font-headline font-black text-5xl mb-2">98%</span>
+<span class="material-symbols-outlined text-primary mb-2" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-headline font-bold text-xs tracking-widest uppercase text-on-surface-variant">Guest Recommends</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Review Grid -->
+<section class="py-24 bg-surface-container-low px-8 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto">
+<div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+<!-- Review Card 1 -->
+<div class="break-inside-avoid bg-surface p-10 rounded-lg shadow-[0px_20px_40px_rgba(27,28,28,0.06)] hover:bg-surface-container-highest transition-all transform hover:scale-[1.02]">
+<div class="flex justify-between items-start mb-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline font-black text-xs tracking-[0.1em] uppercase text-zinc-400">MAR 2024</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-4 leading-tight italic">"PURE KINETIC ENERGY."</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">The sound system at the rooftop lounge is unlike anything I've experienced. It's not just a stay; it's a sensory immersion into Miami's soul.</p>
+<div class="flex items-center justify-between border-t border-outline-variant/15 pt-6">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Guest Portrait" class="w-full h-full object-cover" data-alt="portrait of a stylish man in a leather jacket with cool urban lighting, professional headshot style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP8pmp2rEXqNvqy41riAorSsS3wTXeSCcSMzVjx_Bf0lcAFjPrZzKN03E5TPhurhgec-x5nycSZ7ZlBcnTFjQfS2jYCUjt7iNO1bZIbh_IUCe7RFRm3sALiOqkHwWiX5aryHv0kkfkKRM3E5Zngs49x8ol0jdM4XEprWUTN2UEYOAeUc-zKsIIB7wgrGZI8bA88HLQTUzNn77D7rslRXkJBLYSd34-NTvFnQmOb_Ydi_KwekWsk3igCrxoVe-vF9EnwMRI7R_PH7w"/>
+</div>
+<span class="font-headline font-bold text-sm">Marcus V.</span>
+</div>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-sm text-[10px] font-black uppercase tracking-widest">Verified Stay</span>
+</div>
+</div>
+<!-- Featured Image Break -->
+<div class="break-inside-avoid relative rounded-lg overflow-hidden h-96 group">
+<img alt="Party Scene" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="high contrast night photography of a crowded miami club with pink neon lasers and blurry movement, editorial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS7zASnvzcESC5PXRAp8jS_mBQZsPpGnCPpc0D01AeSU5-XEFdzuK3f6Vk1bbw5QFf90da-sc8oiGjX0QUoyh6hIXagoGIK_JRMFuEokMVSwcxINewP4MUkMb1ut8wxcvDbXpptn8SydvPph4wcS5Yo2szLNoaGhTlE70U5AfoxV5dDEUJOiK7rWZt7_-v745mx3i2eOED8IVqY0G-3r2l37k8yi0cwxpIoDnI3QIBwXv6NUX7u1twhR0WXGwM8C49Y__3FyYq3po"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-headline font-black text-3xl leading-none uppercase">THE NOISE OF THE NIGHT</h4>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="break-inside-avoid bg-surface p-10 rounded-lg shadow-[0px_20px_40px_rgba(27,28,28,0.06)] hover:bg-surface-container-highest transition-all transform hover:scale-[1.02]">
+<div class="flex justify-between items-start mb-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline font-black text-xs tracking-[0.1em] uppercase text-zinc-400">FEB 2024</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-4 leading-tight italic">"REDEFINING LUXURY CHAOS."</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Most 'luxury' hotels are boring. Neon Edict is anything but. The interior design is brutal yet incredibly comfortable.</p>
+<div class="flex items-center space-x-3 border-t border-outline-variant/15 pt-6">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Guest Portrait" class="w-full h-full object-cover" data-alt="close up of a woman with vibrant neon light reflections on her face, editorial style portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeleV7b4WBkB1ZfFxTVyGkR8rchpEO9AXkhtPBDWEdx9Xto8DprJDlx7skTnOA1fY8Gpe0AqQvNbfh1AazM2uIjIXyamzW_PrmFjV2HzvtT2ShOlJajhQ5YuCwRBA8WUrzbJqAiCo2rnhrJl2vcAxvUISETCEkDlkwI1JdGirds0wpuU_0OxW0NfUENkbPUkQaDFA1LGIYLx3QIJM47prdqqQb4FIpZ1SwFrfgjNob6pj8qIty7z4oQu5T_ADbXK7GV-FOyMDtIQs"/>
+</div>
+<span class="font-headline font-bold text-sm">Elena S.</span>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="break-inside-avoid bg-surface p-10 rounded-lg shadow-[0px_20px_40px_rgba(27,28,28,0.06)] hover:bg-surface-container-highest transition-all transform hover:scale-[1.02]">
+<div class="flex justify-between items-start mb-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="font-headline font-black text-xs tracking-[0.1em] uppercase text-zinc-400">JAN 2024</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-4 leading-tight italic">"THE COCKTAILS ARE ART."</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">The mixology team at the main bar deserves a Michelin star. Try the 'Pink Edict' - it's a revelation.</p>
+<div class="flex items-center justify-between border-t border-outline-variant/15 pt-6">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Guest Portrait" class="w-full h-full object-cover" data-alt="portrait of a man in a stylish suit at a bar with low atmospheric lighting, high fashion style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGB8zapUjqpzNd_hG0lna8aRjTCK3C-XMtArtq9PKFeoBol0ELI1a2s_j0Tmc-rPCjIwZ2QnCneUqBJECbk2u2Ak84hKSLaIXvp7X5hdGerGY3zpIy1UX58JrFrF3HBvQbu7pguNEz2L78Skm8D4FsAH5lTbecWIb_xcnGeuGCB4CDN2Nkk6YiEeURw2cInwpp8HVzh8ncLG5EzLn-YJv9i04iOcj4fB5yBYrMvqZOT-Ix4KU7VVs7giLjwwYu3Tr0O_-sEhAP3tI"/>
+</div>
+<span class="font-headline font-bold text-sm">Julian R.</span>
+</div>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-sm text-[10px] font-black uppercase tracking-widest">Verified Stay</span>
+</div>
+</div>
+<!-- Large Brutalist Graphic Card -->
+<div class="break-inside-avoid bg-primary-container p-12 rounded-lg flex flex-col justify-center items-center text-center text-white">
+<span class="material-symbols-outlined text-6xl mb-6" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h3 class="font-headline font-black text-4xl mb-6 leading-none uppercase">JOIN THE MANIFESTO</h3>
+<p class="font-body text-sm uppercase tracking-widest mb-8 opacity-80">Don't just watch the chaos. Own it.</p>
+<button class="bg-white text-primary px-8 py-3 rounded-full font-headline font-bold uppercase text-xs tracking-widest hover:bg-zinc-100 transition-colors">Submit a Review</button>
+</div>
+<!-- Review Card 4 -->
+<div class="break-inside-avoid bg-surface p-10 rounded-lg shadow-[0px_20px_40px_rgba(27,28,28,0.06)] hover:bg-surface-container-highest transition-all transform hover:scale-[1.02]">
+<div class="flex justify-between items-start mb-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline font-black text-xs tracking-[0.1em] uppercase text-zinc-400">DEC 2023</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-4 leading-tight italic">"TOTAL IMMERSION."</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">The staff treats you like you're the only person in the building, even when the club is at capacity. True professional service.</p>
+<div class="flex items-center space-x-3 border-t border-outline-variant/15 pt-6">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Guest Portrait" class="w-full h-full object-cover" data-alt="portrait of a woman smiling with urban nighttime background, soft focus lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj3Qw4ihNhjrBq_iVPw3VZb67PGR0e21oT70tCRZNfwjCoJSYKE4WXEV4APinNa0emyYDhMjfuFEJBVqIeJW0GwUqG79AinygWSKxsZet_eFYf5_odiTjH2OSy5hRd-NunullX_k1gyOx195XUlEmwTloMl9SNz2PafKE1SqEYCH_bg4s4BKONvrgynbLgE-eQRzNUEMzQaSEeKT5SFSu0vJO-vk0oyhvEHAmlH9Kn0L8gVJUdmQFRE5YtNWHzk3HvVOPXm7xgczs"/>
+</div>
+<span class="font-headline font-bold text-sm">Sarah K.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call To Action -->
+<section class="relative py-32 bg-inverse-surface overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img alt="Luxury Suite" class="w-full h-full object-cover" data-alt="luxury dark hotel room interior with view of miami skyline lights at night through floor to ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALcoiJCYwixzjUJoYbHTPIqsicBqmRFGD3IvzffpAFn2kcLcvgpbfheOp1n7Eaoq15WxDiVBE4Q1gXrZ53XqBUMZM-6Bhh8eRkDHGIiPOgHqTJQEDcZeCWkhNgLPTzZnDaA0OyaFVFRmMC65fiwDL5sLgTCSZZ2pDr2Crpqayz0NAOykITk_KTiV--n_3MfolC7eiY8xIlEPhOYfIAHMgr60NeLIcg44vu5JY7bXdWyJk9victlnbQw_J5JNX5YACKR2gT6BhYw6w"/>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 text-center">
+<h2 class="font-headline font-black text-6xl md:text-8xl text-white mb-8 uppercase text-bleed">BECOME THE LEGEND</h2>
+<p class="text-white/60 max-w-2xl mx-auto mb-12 text-lg">Your next story starts at the edge of the night. Limited suites available for the season.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+<button class="w-full sm:w-auto bg-primary hover:bg-primary-container text-white px-10 py-5 rounded-full font-headline font-black uppercase tracking-widest text-sm transition-all shadow-lg hover:shadow-primary/40">
+                    Book Your Experience
+                </button>
+<button class="w-full sm:w-auto bg-transparent border-2 border-white/20 hover:border-white text-white px-10 py-5 rounded-full font-headline font-black uppercase tracking-widest text-sm transition-all">
+                    View Gallery
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 mt-auto bg-zinc-100 dark:bg-zinc-950">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+<div class="text-xl font-black text-rose-700 font-headline uppercase tracking-tighter">Neon Edict</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-plus-jakarta text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-500 hover:text-rose-400 transition-all" href="#">Privacy</a>
+<a class="font-plus-jakarta text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-500 hover:text-rose-400 transition-all" href="#">Terms</a>
+<a class="font-plus-jakarta text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-500 hover:text-rose-400 transition-all" href="#">Press</a>
+<a class="font-plus-jakarta text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-500 hover:text-rose-400 transition-all" href="#">Careers</a>
+<a class="font-plus-jakarta text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-500 hover:text-rose-400 transition-all" href="#">Contact</a>
+</div>
+<div class="font-plus-jakarta text-sm uppercase tracking-widest text-zinc-500">
+                © 2024 Neon Edict. Luxury and Chaos Defined.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shuckers Waterfront | Neon Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#5d3f40",
+                        "tertiary": "#3a6070",
+                        "surface-container-high": "#e9e8e7",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#92f3ec",
+                        "on-tertiary-container": "#f8fcff",
+                        "surface-dim": "#dbdad9",
+                        "secondary": "#006a65",
+                        "primary-fixed-dim": "#ffb3b5",
+                        "surface-container": "#efeded",
+                        "outline-variant": "#e6bdbd",
+                        "on-tertiary-fixed": "#001f29",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#75d6d0",
+                        "surface-container-highest": "#e3e2e2",
+                        "surface": "#fbf9f8",
+                        "error-container": "#ffdad6",
+                        "background": "#fbf9f8",
+                        "tertiary-fixed": "#c1e8fb",
+                        "tertiary-fixed-dim": "#a5ccde",
+                        "on-primary-fixed-variant": "#920027",
+                        "on-primary-fixed": "#40000c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "primary-fixed": "#ffdada",
+                        "on-secondary-container": "#00716c",
+                        "tertiary-container": "#537989",
+                        "outline": "#916e6f",
+                        "surface-variant": "#e3e2e2",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#92f3ec",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#fffbfa",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-tertiary-fixed-variant": "#254c5b",
+                        "primary-container": "#e41445",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#ffb3b5",
+                        "primary": "#b90034",
+                        "on-secondary-fixed": "#00201e",
+                        "on-background": "#1b1c1c",
+                        "inverse-surface": "#303030",
+                        "on-secondary-fixed-variant": "#00504c",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#be0035",
+                        "surface-container-low": "#f5f3f3",
+                        "on-surface": "#1b1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-nav { background: rgba(251, 249, 248, 0.7); backdrop-filter: blur(12px); }
+        .text-glow { text-shadow: 0 0 15px rgba(228, 20, 69, 0.4); }
+        .clip-slant { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-white overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 w-full bg-surface/70 dark:bg-black/70 backdrop-blur-md border-b border-[#303030]/10 dark:border-white/10 shadow-xl shadow-[#1b1c1c]/5 transition-all duration-300">
+<div class="text-2xl font-black italic tracking-tighter text-[#b90034] dark:text-[#e41445] font-['Space_Grotesk'] uppercase">
+            Shuckers Waterfront
+        </div>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] tracking-tight font-bold uppercase text-[#e41445] border-b-2 border-[#e41445] pb-1" href="#">Stay</a>
+<a class="font-['Space_Grotesk'] tracking-tight font-bold uppercase text-[#303030] dark:text-[#fbf9f8] hover:text-[#e41445] transition-colors" href="#">Our Property</a>
+<a class="font-['Space_Grotesk'] tracking-tight font-bold uppercase text-[#303030] dark:text-[#fbf9f8] hover:text-[#e41445] transition-colors" href="#">Dining</a>
+<a class="font-['Space_Grotesk'] tracking-tight font-bold uppercase text-[#303030] dark:text-[#fbf9f8] hover:text-[#e41445] transition-colors" href="#">Private Events</a>
+<a class="font-['Space_Grotesk'] tracking-tight font-bold uppercase text-[#303030] dark:text-[#fbf9f8] hover:text-[#e41445] transition-colors" href="#">Promotions</a>
+<a class="font-['Space_Grotesk'] tracking-tight font-bold uppercase text-[#303030] dark:text-[#fbf9f8] hover:text-[#e41445] transition-colors" href="#">FAQ</a>
+</div>
+<button class="bg-primary hover:bg-primary-container text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 scale-95 active:scale-90 shadow-lg shadow-primary/20">
+            Book Now
+        </button>
+</nav>
+<!-- 1. Immersive Hero -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Waterfront Sunset" class="w-full h-full object-cover" data-alt="Cinematic wide shot of a Miami waterfront patio at sunset with vibrant orange and purple sky reflecting on the calm bay water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1P_RkrKMRK_hzNr1ScwFwP3QYBel2YKCEB3snPOiLyv7NXl6NhPiow-wac-EoNJHIEW7gMujNkwy7g0BXGtvgAzpjChB7IjtLV8HQwpYhpEO6KM_8d4B5cmQz-l00pJ_QxREc67eS8RB6261ZcFNcD_s_bWZr0CB8hzu3eRaL0jC2bVwCkBXK37Aiay3OjuBVDXPkPppVZF04R3DZam6AZRXeYVMnWZ8AV2xK-vZ-l_n7zJNifnudqDMXHnSuytb73c88UUHzl7Q"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-surface"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-6xl">
+<div class="inline-block px-4 py-1 bg-primary-container text-white text-xs font-black tracking-[0.2em] uppercase mb-6 rounded-sm">
+                Live From North Bay Village
+            </div>
+<h1 class="font-headline font-black text-6xl md:text-8xl lg:text-[9rem] leading-[0.9] tracking-tighter text-white mb-8">
+                WATERFRONT SOUL.<br/>
+<span class="text-primary-container italic text-glow">SPORTS BAR ENERGY.</span>
+</h1>
+<p class="text-white/80 font-body text-xl md:text-2xl max-w-3xl mx-auto font-light leading-relaxed">
+                The absolute authority in Miami dockside dining, where high-energy sports meet the cool breeze of the bay.
+            </p>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 animate-bounce">
+<span class="text-[10px] uppercase tracking-[0.3em]">Explore</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- 2. The Shuckers Experience (About) -->
+<section class="py-32 px-8 lg:px-24 bg-surface grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5">
+<h2 class="font-headline text-primary font-black text-sm tracking-[0.4em] uppercase mb-4">The Legacy</h2>
+<h3 class="font-headline font-black text-5xl md:text-6xl text-on-surface leading-none mb-8">
+                SHUCKERS WATERFRONT GRILL &amp; BAR: <span class="text-outline text-transparent" style="-webkit-text-stroke: 1.5px #b90034;">A Miami Icon Reimagined.</span>
+</h3>
+<p class="font-body text-on-surface-variant text-lg mb-8 leading-relaxed">
+                Since 1989, Shuckers has been the heart of North Bay Village. We've taken that legendary spirit and infused it with modern Miami kineticism. From our famous grilled wings to the panoramic views that define the "Magic City," every moment here is an editorial of island living.
+            </p>
+<div class="flex gap-4">
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="block font-headline font-black text-4xl text-primary mb-1">30+</span>
+<span class="text-xs uppercase font-bold tracking-widest opacity-60">Years of Service</span>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="block font-headline font-black text-4xl text-primary mb-1">100</span>
+<span class="text-xs uppercase font-bold tracking-widest opacity-60">Boat Slips</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+<img alt="High Energy Crowd" class="w-full h-[600px] object-cover rounded-xl shadow-2xl relative z-10" data-alt="Atmospheric shot of a vibrant outdoor patio bar crowd cheering during a sports game with Miami skyline in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5NOpUkUaNLatSCoQFy6HfN0Namo_pS-mRX5yqOpF73kZtD_IXvYU0zMb1vMT_-y_oXwxXjK67C8oHyC2Dwmy0l7rZ9-mscEPZE6ewuwbcpRq6Wv5iBwGJgh2oDm90V-ttRDgFjuwLSC8AhJm1hCxO-W93uxGvgxmvTO39Not2JE-HqBh3D8yaf10qhF0qa4hZ2oZiHYrZ3wgxoXyiMY0syd6Vjbh-Jbm7zZCZTRSOfAANJ2JNTQpQwjsl-Wxrzfk7IB6CJYwrzjc"/>
+<div class="absolute -bottom-6 -right-6 p-8 bg-inverse-surface text-white max-w-xs z-20">
+<p class="font-headline font-bold text-lg leading-tight uppercase italic">"The undisputed champion of dockside viewing."</p>
+<div class="mt-4 h-1 w-12 bg-primary-container"></div>
+</div>
+</div>
+</section>
+<!-- 3. Bites & Delights (Menu Highlight) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-[1400px] mx-auto px-8">
+<div class="flex justify-between items-end mb-20 border-b border-outline-variant pb-8">
+<div>
+<h2 class="font-headline font-black text-7xl uppercase tracking-tighter">Bites &amp; <span class="text-primary-container">Delights</span></h2>
+<p class="text-on-surface-variant mt-4 font-body text-xl">The culinary soul of the waterfront.</p>
+</div>
+<button class="font-headline font-bold uppercase tracking-widest text-sm hover:text-primary transition-colors flex items-center gap-2">
+                    Full Menu <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Menu Item 1 -->
+<div class="group">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img alt="Hangover Eggs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Gourmet breakfast dish featuring perfectly poached eggs over smashed avocado and sourdough with microgreens and vibrant chili flakes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeeCLy9tfrWp1RuW_p9hTuCFDIaexquPmGRN7-Xa10PgRLrHvz5P95tLjAmk_5OgQDFpmI9BOrCdpfoIh8n4RQbuan44IbN-7Sp6qtos1q-ngiqr6ElUzaPKbOrszHiB3glm49TL2QWfLBYbmwQ0kKRRYuLXtvvT-iCveM_7rUrrkxDZO4qKunuc_R-Flko9NjrVZUiXUXDBqgQKxE9VzsCUmRKxeLkBcfgjJK0UNlq136tKZSejzWmKGjXYlDZs8oUcWlFRv8RG8"/>
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 text-[10px] font-black text-white uppercase tracking-widest">Brunch Legend</div>
+</div>
+<div class="flex justify-between items-start">
+<h4 class="font-headline font-extrabold text-2xl uppercase tracking-tight">The Hangover Eggs</h4>
+<span class="font-headline font-bold text-xl text-primary-container">$18</span>
+</div>
+<p class="mt-2 text-on-surface-variant font-body font-light">Two poached eggs, spicy chorizo hash, smashed avocado, and citrus hollandaise.</p>
+</div>
+<!-- Menu Item 2 -->
+<div class="group mt-12 md:mt-24">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img alt="Signature Cocktails" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Artisanal tropical cocktail in a crystal glass with fresh fruit garnishes on a sunlit bar counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0rknYWK2cq3WF-Kw4mvomchFD2lNjEUGbqBZnVfCE1Pz_Tb-_CK6cRWUarUWLrJAOkSQal2wY9J9yDhU8OxFKib6nad5MwF9M7emiwjyeQCEXbXOWWK-fdyzw47TDsfuT7lFyTdCM5qYGOVIM69oqXO5_x1YH2lUHh41DZ2TUJC7coQFLvpJMcRmpOh4ZkRU1UsZRafaE1bKx3NLFOKC9U-oHy0HGoXYVWszXgmFGorRCSKbw8TUwtkveN9Ww3oTNOaafl4QkIIk"/>
+</div>
+<div class="flex justify-between items-start">
+<h4 class="font-headline font-extrabold text-2xl uppercase tracking-tight">Bay Breeze Spritz</h4>
+<span class="font-headline font-bold text-xl text-primary-container">$16</span>
+</div>
+<p class="mt-2 text-on-surface-variant font-body font-light">Grey Goose, fresh watermelon, mint, elderflower, and topped with prosecco.</p>
+</div>
+<!-- Menu Item 3 -->
+<div class="group">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img alt="Avocado Toast" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern editorial food photography of a vibrant green salad with fresh citrus and seared seafood on a matte ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYL8YNcWE2l5a3D7Q5Oqg4olgO1Sk97ZvM6isXjjpVDM7LbQR3ssW2m1BV0hafmCH7sS-CuAdYbkQ1pnlg53wtXHAlfIIvAeEo2rDOe-zu5jNzQ8-uEkoNu2qN18KI4S6c9l5_XHcMyLCkVrb0ATFi6TE8uAx-QZdzv1lQCzz1o5DJpOy0NWA1XfZ1hGOeIHfM02hotT45lujCkWDP6Mxe_0dJlHHmSAAX06nfg-UIJnipzcH2BrJL1qzZLBnLNPxT0nML3PPttuQ"/>
+<div class="absolute top-4 right-4 bg-secondary px-3 py-1 text-[10px] font-black text-white uppercase tracking-widest">Plant Based</div>
+</div>
+<div class="flex justify-between items-start">
+<h4 class="font-headline font-extrabold text-2xl uppercase tracking-tight">Coastal Grain Bowl</h4>
+<span class="font-headline font-bold text-xl text-primary-container">$22</span>
+</div>
+<p class="mt-2 text-on-surface-variant font-body font-light">Quinoa, roasted heirloom carrots, tahini dressing, and seared local snapper.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Captured Moments (Gallery) -->
+<section class="py-32 px-8 max-w-[1400px] mx-auto">
+<h2 class="font-headline font-black text-sm text-primary tracking-[0.5em] uppercase mb-16 text-center">Captured Moments</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2 relative h-[500px] group overflow-hidden">
+<img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" data-alt="Black and white high-contrast photo of people cheering at an outdoor bar with a large TV screen in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPh_bzHDy3624bmC5yQEQoNXiPLp0sJXT3hUf7rxP1gOWa9aXMrX8QYpRwnjDATZsok-B5TRkyw5ic3l3qIY18M5K1Piny1RQFVS4dkwqow3fPYsij7rZEv_nUoavi_VAKDYi4gvTZN15TBUzcJiesG6YsT5LIKhMXMuhT0vZo_2x5v4XjseufN1GpCmirf6b8JXaXSKGc9G6Py_IEzBcVklinp66Y3m99h-u7pcWFpy-LHxMrqhU5tWmftC4BQqkiZ9SjtomXYmU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="text-white font-headline font-black text-4xl uppercase leading-none">Game Day,<br/>Every Day</p>
+</div>
+</div>
+<div class="md:col-span-1 h-[500px] relative">
+<img class="w-full h-full object-cover" data-alt="Dramatic night shot of a waterfront event with blue neon lights reflecting on the water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpjQ3mJVGnXer8fH52V1E4qGscOo-Ciwigd83JaTjuRSlkgeGLq_0fVs3vrbafVMPdFVrr9_NcVFzX88ZTgvYdn4tv0s5Pr2gpHrOfMr7RBw5C1RLrU4du1hIIQ8cRGFq1wqkRmmWpq6abvTWcYV6GlgRL3ZlhxRO37hBG3kGDR55C3FcyEpY8jTc3PfKb5WUM645urQIAnWPTnwtj1VjxNDMs_aF7y3ddT1nBtXoRtYM1M38QV9DMNEj24TnfOYxdmbMw6lBEZ9Q"/>
+<div class="absolute -top-4 -right-4 bg-primary-container p-6 w-32 h-32 flex items-center justify-center rotate-12">
+<span class="text-white font-headline font-black text-xs uppercase tracking-widest text-center">Private Events</span>
+</div>
+</div>
+<div class="md:col-span-1 flex flex-col gap-8">
+<div class="h-1/2 relative group overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of cold beer glasses on a table overlooking the ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbCbDj5MoNAlh-GJAuYOZeZf_GiSnvBlvR_3R2RndmajQ-8bov9USv3-fGnNWa2LEfl39_RgHlKUhpzPhGmzOh62CtKshYGeY6OFDxOkURc7Cy-3Ql18gQA37Vren60bdpcuiFhtT-_CHH8FPnVLM2VEF0U9YwJR5bsuwLyQqe4D7k8lvI88l6aWhgcDS1kSEZITHZ4ueotrxcBnTzjdqFyGhVnRa-dZG9RzHIXm_JzdOwCa9o6Dl8UJcFxbHv6kyjXLfWqpdYM4o"/>
+<div class="absolute inset-0 border-[20px] border-surface/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="h-1/2 bg-inverse-surface p-8 flex flex-col justify-end">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4">dock</span>
+<p class="text-white font-headline font-bold text-xl uppercase italic">Arrival by sea welcomed.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Ready for Shuckers? (CTA) -->
+<section class="bg-primary py-32 relative overflow-hidden">
+<div class="absolute -right-20 -top-20 text-[20rem] font-headline font-black text-white/5 select-none pointer-events-none uppercase italic">SHUCKERS</div>
+<div class="max-w-4xl mx-auto px-8 relative z-10 text-center">
+<h2 class="font-headline font-black text-6xl md:text-8xl text-white mb-12 tracking-tighter leading-none">READY FOR<br/>THE VIEW?</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-white text-primary hover:bg-surface-container-low transition-colors px-12 py-5 rounded-full font-headline font-black uppercase tracking-widest text-lg shadow-2xl">
+                    Book Your Table
+                </button>
+<button class="border-2 border-white/40 text-white hover:bg-white/10 transition-colors px-12 py-5 rounded-full font-headline font-black uppercase tracking-widest text-lg">
+                    Join The Guestlist
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#303030] dark:bg-black w-full py-12 px-8 tonal-shift">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-black text-white mb-4">Shuckers</div>
+<p class="text-neutral-400 mb-6 max-w-xs leading-relaxed">
+                    Elevating the waterfront experience since 1989. North Bay Village's premiere destination for sports and sun.
+                </p>
+<div class="flex gap-4">
+<a class="text-neutral-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-neutral-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-neutral-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase mb-4 tracking-widest">Experience</h4>
+<ul class="space-y-3">
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Private Events</a></li>
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Dockage Info</a></li>
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Menu Highlights</a></li>
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Live Music</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase mb-4 tracking-widest">Company</h4>
+<ul class="space-y-3">
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Careers</a></li>
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Press Kit</a></li>
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-neutral-400 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#e41445] font-bold uppercase mb-4 tracking-widest">Connect</h4>
+<p class="text-neutral-400 mb-4">Subscribe for event early access.</p>
+<div class="flex">
+<input class="bg-neutral-800 border-none text-white text-xs p-3 w-full focus:ring-1 focus:ring-[#e41445]" placeholder="Email Address" type="email"/>
+<button class="bg-[#e41445] text-white px-4 py-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-neutral-500 text-xs">© 2024 Shuckers Waterfront Grill &amp; Bar. A Miami Nightlife Group Experience.</p>
+<div class="flex gap-6">
+<a class="text-neutral-500 hover:text-white text-xs transition-colors underline" href="#">Privacy Policy</a>
+<a class="text-neutral-500 hover:text-white text-xs transition-colors underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
